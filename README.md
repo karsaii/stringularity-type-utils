@@ -35,4 +35,4 @@ functions - the basics.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE.MD)
