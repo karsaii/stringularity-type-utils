@@ -7,9 +7,9 @@
     "url": "git+https://github.com/karsaii/stringularity-type-utils.git"
   },
   "author": "István Karsai <istvan.karsai.public@gmail.com>",
-  "license": "SEE LICENSE IN LICENSE.MD",
+  "license": "See License in LICENSE.md",
   "description": "Less type boilerplate, more fun and safety!",
-  "main": "./stringularity-type-utils.js",
+  "main": "index.js",
   "scripts": {
     "unitTest": "nyc mocha --slow 0 -b",
     "lint": "eslint .",

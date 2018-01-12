@@ -1,9 +1,9 @@
 /**
  *  @module stringularity-type-utils
  */
-var strings = require('./src/common/strings'),
-    numbers = require('./src/common/numbers'),
-    bools = require('./src/common/bools'),
+var strings = require('../common/strings'),
+    numbers = require('../common/numbers'),
+    bools = require('../common/bools'),
     dontEnumBugObject = {toString: null},
     hasDontEnumBug = !dontEnumBugObject.propertyIsEnumerable('toString'),
     dontEnums = [

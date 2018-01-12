@@ -1,4 +1,4 @@
-# Stringularity Type Utils Documentation
+# Stringularity-type-utils
 
 ## Table of contents:
 
@@ -35,4 +35,4 @@ functions - the basics.
 
 ## License
 
-[MIT](LICENSE.MD)
+[MIT](LICENSE.md)

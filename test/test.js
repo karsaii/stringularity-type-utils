@@ -1,6 +1,6 @@
 /* eslint-disable */
 var paramsData = require('./fixtures/paramsData'),
-    stu = require('../stringularity-type-utils'),
+    stu = require('../src/lib/stringularity-type-utils'),
     testUtils = require('./common/testUtils'),
     prereqTestScope = {
         object: stu
