@@ -522,6 +522,8 @@ stu.cardinalityObject = {
  *  @function
  *  @name isUndefinedCore
  *  @param {Object} object
+ *  @param {String} defineType
+ *  @param {Object} defineExclusionsObject
  *  @return {Boolean} returnValue
  */
 stu.isUndefinedCore = function isUndefinedCoreFunction(object, defineType, defineExclusionsObject) {
@@ -711,7 +713,7 @@ stu.isNotDefinedObjectKey = function isNotDefinedObjectKeyFunction(object, key) 
  *  Otherwise returns false.
  *  @function
  *  @name areConditionGuard
- *  @param {Object} object
+ *  @param {Object} args
  *  @param {Function} conditionFunction
  *  @param {String} cardinality
  *  @return {Function} returnFunction
@@ -868,7 +870,7 @@ stu.isBoolean = function isBooleanFunction(object) {
 /**
  *  @function
  *  @name areStrings
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areStrings = function areStringsFunction() {
@@ -879,7 +881,7 @@ stu.areStrings = function areStringsFunction() {
 /**
  *  @function
  *  @name areEmptyStrings
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areEmptyStrings = function areEmptyStringsFunction() {
@@ -890,7 +892,7 @@ stu.areEmptyStrings = function areEmptyStringsFunction() {
 /**
  *  @function
  *  @name areAnyEmptyStrings
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areAnyEmptyStrings = function areAnyEmptyStringsFunction() {
@@ -901,7 +903,7 @@ stu.areAnyEmptyStrings = function areAnyEmptyStringsFunction() {
 /**
  *  @function
  *  @name areNonEmptyStrings
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areNonEmptyStrings = function areNonEmptyStringsFunction() {
@@ -912,7 +914,7 @@ stu.areNonEmptyStrings = function areNonEmptyStringsFunction() {
 /**
  *  @function
  *  @name areNoneStrings
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areNoneStrings = function areNoneStringsFunction() {
@@ -934,7 +936,7 @@ stu.areAnyStrings = function areAnyStringsFunction() {
 /**
  *  @function
  *  @name areArrays
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areArrays = function areArraysFunction() {
@@ -946,7 +948,7 @@ stu.areArrays = function areArraysFunction() {
 
  *  @function
  *  @name areNonEmptyArrays
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areNonEmptyArrays = function areNonEmptyArraysFunction() {
@@ -957,7 +959,7 @@ stu.areNonEmptyArrays = function areNonEmptyArraysFunction() {
 /**
  *  @function
  *  @name areEmptyArrays
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areEmptyArrays = function areEmptyArraysFunction() {
@@ -968,7 +970,7 @@ stu.areEmptyArrays = function areEmptyArraysFunction() {
 /**
  *  @function
  *  @name areAnyNotFunctions
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnCondition
  */
 stu.areAnyNotFunctions = function areAnyNotFunctionsFunction() {
@@ -980,7 +982,7 @@ stu.areAnyNotFunctions = function areAnyNotFunctionsFunction() {
  *  All cardinality wrapped defined level wrapper for {@link stu.isLooselyDefined}.
  *  @function
  *  @name areDefined
- *  @param {...Object} args
+ *  @param {...Object} arguments
  *  @return {Boolean} returnValue
  */
 stu.areDefined = function areDefinedFunction() {
@@ -995,7 +997,7 @@ stu.areDefined = function areDefinedFunction() {
  *  @function
  *  @name getValueFromNestedObject
  *  @param {Object} object
- *  @param {Array(String)} keyArray
+ *  @param {Array.<String>} keyArray
  *  @return {Object} element
  */
 /* eslint-disable max-statements */
